@@ -6,12 +6,8 @@ import random
 import re
 import sys
 
-#
-# Complete the 'aVeryBigSum' function below.
-#
-# The function is expected to return a LONG_INTEGER.
-# The function accepts LONG_INTEGER_ARRAY ar as parameter.
-#
+
+
 def aVeryBigSum(ar):
     total = 0
 
@@ -19,8 +15,7 @@ def aVeryBigSum(ar):
         total += num
 
     return total
-    # Write your code here
-
+    
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
