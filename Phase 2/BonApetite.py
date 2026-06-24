@@ -16,15 +16,18 @@ import sys
 #
 
 def bonAppetit(bill, k, b):
-    total = sum(bill)
-    total -= bill[k]
+    total = 0
 
+    for item in bill:
+        total += item
+
+    total -= bill[k]
     share = total // 2
 
     if b == share:
         print("Bon Appetit")
     else:
-        print(b - share)
+        print(b - share)    
 if __name__ == '__main__':
     first_multiple_input = input().rstrip().split()
 
